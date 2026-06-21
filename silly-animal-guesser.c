@@ -1,5 +1,6 @@
 //A simple game that reveals what animal you are based on what color and number to enter! 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     char a;
@@ -7,6 +8,9 @@ int main() {
     printf("Hello! Welcome to my game! \n");
     printf("Choose a color (R/B/G/Y) : ");
     scanf(" %c", &a);
+    if (a >= 'a' && a <= 'z') {
+        a -= 'a' - 'A';
+    }
     printf("Choose a number (1/2/3/4) : ");
     scanf("%d",&b);
     
@@ -52,6 +56,7 @@ int main() {
             printf("Invalid color!");
     }
     
+    system("pause");
     return 0;
 }
 //End of program
