@@ -1,4 +1,4 @@
-//A simple game that reveals what animal you are based on what color and number to enter! 
+//A simple game that reveals what animal you are based on what color and number to enter! - TS
 #include <stdio.h>
 #include <stdlib.h>
 
